@@ -131,7 +131,7 @@ Full list: [Supported Languages →](https://github.com/PaddlePaddle/PaddleOCR/b
 
 Available at: `http://localhost:8000/docs`
 
-![Swagger Screenshot]
+![Swagger Screenshot](https://raw.githubusercontent.com/onk2cell/ocr_fast_api/refs/heads/main/AAA_OCR.png)
 
 
 ---
