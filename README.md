@@ -93,7 +93,19 @@ docker compose up -d
 
 ---
 
-## 📑 API Example
+## 📑 API Endpoints Summary
+
+| Method | Endpoint                      | Description                                      |
+|--------|-------------------------------|--------------------------------------------------|
+| `POST` | `/ocr/predict-by-pdf`         | Upload and OCR a PDF file                        |
+| `GET`  | `/ocr/predict-by-path`        | OCR from a local file path                       |
+| `POST` | `/ocr/predict-by-base64`      | OCR on a base64-encoded image                    |
+| `POST` | `/ocr/predict-by-file`        | Upload and OCR an image file                     |
+| `GET`  | `/ocr/predict-by-url`         | OCR from an image URL                            |
+| `POST` | `/ocr/gpt4o-simple-analyze`   | Use GPT-4o to process OCR text into JSON         |
+| `POST` | `/ocr/process` (custom route) | OCR + Prompt-driven LLM analysis (custom flow)   |
+
+---
 
 ### POST `/ocr/process`
 
@@ -133,7 +145,6 @@ Available at: `http://localhost:8000/docs`
 
 ![Swagger Screenshot](https://raw.githubusercontent.com/onk2cell/ocr_fast_api/refs/heads/main/AAA_OCR.png)
 
-
 ---
 
 ## 🧾 License
@@ -163,6 +174,7 @@ This repo aims to become a **complete document intelligence engine** that:
 - Supports multiple language models and plugins
 
 Stay tuned for weekly updates!
+
 ---
 
 ## 📦 Inventory Document Example (Prompt-based Extraction)
