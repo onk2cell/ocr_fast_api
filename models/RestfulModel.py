@@ -8,9 +8,9 @@ from fastapi.responses import JSONResponse, Response
 from .OCRModel import OCRModel
 
 class RestfulModel(BaseModel):
-    resultcode : int = 200 # 响应代码
-    message: str = None # 响应信息
-    data: Union[List, str] = [] # 数据
+    resultcode : int = 200 
+    message: str = None 
+    data: Union[List, str] = [] 
 
 def resp_200(*, data: Union[list, dict, str]) -> Response:
     return JSONResponse(

@@ -6,9 +6,9 @@ from pydantic import BaseModel
 
 
 class OCRModel(BaseModel):
-    coordinate: List  # 图像坐标
+    coordinate: List  
     result: Set
 
 
 class Base64PostModel(BaseModel):
-    base64_str: str  # base64字符串
+    base64_str: str  

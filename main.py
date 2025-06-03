@@ -11,7 +11,7 @@ from routers import ocr
 from utils.ImageHelper import *
 
 app = FastAPI(title="Paddle OCR API",
-              description="基于 Paddle OCR 和 FastAPI 的自用接口")
+              description="Paddle OCR API for invoice parsing")
 
 
 # 跨域设置
