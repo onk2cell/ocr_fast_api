@@ -204,7 +204,7 @@ async def gpt4o_simple_analyze(request: SimpleGPT4ORequest):
         return {"error": str(e)}
 
 
-openai.api_key = """"
+openai.api_key = ""
 
 
 class OCRText(BaseModel):
